@@ -15,13 +15,23 @@ class HadethDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         viewBinding = ActivityHadethDetailsBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
+        setSupportActionBar(viewBinding.toolBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.title = ""
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             hadeth = intent.getParcelableExtra(Constants.EXTRA_HADETH, Hadeth::class.java)!!
         } else {
             hadeth = (intent.getParcelableExtra(Constants.EXTRA_HADETH) as Hadeth?)!!
         }
 
-        viewBinding.content.text = hadeth.content
+        viewBinding.content.content.text = hadeth.content
+    }
 
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        onBackPressed()
+        return true
     }
 }

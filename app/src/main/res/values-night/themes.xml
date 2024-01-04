@@ -2,6 +2,14 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Muslim" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/colorDark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand Color. -->
+        <item name="colorSecondary">@color/colorDark</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Statues bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
     </style>
 </resources>
