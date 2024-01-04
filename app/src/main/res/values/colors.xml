@@ -5,4 +5,5 @@
     <color name="transperant">#00CDDC39</color>
     <color name="colorPrimary">#B7935F</color>
     <color name="colorPrimaryDark">#FACC1D</color>
+    <color name="colorDark">#151C33</color>
 </resources>
