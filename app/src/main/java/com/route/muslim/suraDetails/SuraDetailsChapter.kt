@@ -3,16 +3,21 @@ package com.route.muslim.suraDetails
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.route.muslim.Constants
-import com.route.muslim.databinding.ActivitySuraDetailsChapterBinding
+import com.route.muslim.databinding.ActivitySuraDetailsBinding
 
 class SuraDetailsChapter : AppCompatActivity() {
-    lateinit var viewBinding: ActivitySuraDetailsChapterBinding
+    lateinit var viewBinding: ActivitySuraDetailsBinding
     lateinit var adapter: SuraDetailsAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewBinding = ActivitySuraDetailsChapterBinding.inflate(layoutInflater)
+        viewBinding = ActivitySuraDetailsBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
+        setSupportActionBar(viewBinding.toolBar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.title = " "
+
         val suraNumber = intent.getIntExtra(Constants.EXTRA_CHAPTER_INDEX, 0)
         val suraName = intent.getStringExtra(Constants.EXTRA_CHAPTER_NAME)
         val file = applicationContext.assets.open("${suraNumber}.txt").bufferedReader()
@@ -20,13 +25,19 @@ class SuraDetailsChapter : AppCompatActivity() {
         val lines = file.trim().split("\n")
 
         bindLines(lines)
-        viewBinding.suraTitle.text = suraName
+        viewBinding.content.suraTitle.text = suraName
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        onBackPressed()
+        return true
     }
 
 
     private fun bindLines(sura: List<String>) {
         adapter = SuraDetailsAdapter(sura)
-        viewBinding.recycler.adapter = adapter
+        viewBinding.content.recycler.adapter = adapter
 
     }
 
