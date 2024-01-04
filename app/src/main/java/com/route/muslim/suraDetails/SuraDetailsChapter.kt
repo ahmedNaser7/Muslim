@@ -16,7 +16,7 @@ class SuraDetailsChapter : AppCompatActivity() {
         setSupportActionBar(viewBinding.toolBar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowHomeEnabled(true)
-        supportActionBar?.title = ""
+        supportActionBar?.title = " "
 
         val suraNumber = intent.getIntExtra(Constants.EXTRA_CHAPTER_INDEX, 0)
         val suraName = intent.getStringExtra(Constants.EXTRA_CHAPTER_NAME)
