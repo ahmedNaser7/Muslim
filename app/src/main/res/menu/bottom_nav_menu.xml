@@ -13,7 +13,7 @@
         android:icon="@drawable/ic_sebha"
         android:title="sebha" />
     <item
-        android:id="@+id/radio_item"
-        android:icon="@drawable/ic_radio"
-        android:title="radio" />
+        android:id="@+id/athkar_item"
+        android:icon="@drawable/ic_athkar"
+        android:title="athkar" />
 </menu>

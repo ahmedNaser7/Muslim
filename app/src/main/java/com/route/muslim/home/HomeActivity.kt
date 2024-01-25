@@ -7,7 +7,7 @@ import com.route.muslim.R
 import com.route.muslim.databinding.ActivityMainBinding
 import com.route.muslim.home.tabs.hadeth.HadethFragment
 import com.route.muslim.home.tabs.quran.QuranFragment
-import com.route.muslim.home.tabs.radio.RadioFragment
+import com.route.muslim.home.tabs.athkar.AthkarFragment
 import com.route.muslim.home.tabs.sebha.SebhaFragment
 
 class HomeActivity : AppCompatActivity() {
@@ -37,8 +37,8 @@ class HomeActivity : AppCompatActivity() {
                     true
                 }
 
-                R.id.radio_item -> {
-                    showFragment(RadioFragment())
+                R.id.athkar_item -> {
+                    showFragment(AthkarFragment())
                     true
                 }
 
@@ -55,6 +55,7 @@ class HomeActivity : AppCompatActivity() {
             .replace(R.id.fragment_container, fragment)
             .addToBackStack(null)
             .commit()
+
     }
 
 
