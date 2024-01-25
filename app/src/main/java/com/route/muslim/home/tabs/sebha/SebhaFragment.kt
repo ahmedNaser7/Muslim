@@ -25,12 +25,13 @@ class SebhaFragment : Fragment() {
         return binding?.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initView()
+
+    override fun onStart() {
+        super.onStart()
+        loadView()
     }
 
-    private fun initView() {
+    private fun loadView() {
         val image = binding.sebhaBody
         val btnCounter = binding.counter
         val btn = binding.btn
