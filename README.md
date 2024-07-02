@@ -1,6 +1,6 @@
 ## Screenshots
 
-<img src="screenshots/screenshots.png" alt="Screenshot">
+<img src="Screenshots.png" alt="Screenshot">
 
 ## Islami Application?
 
