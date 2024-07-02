@@ -13,14 +13,8 @@ Welcome to the Islami Kotlin Application! This application is designed to provid
 *   Sebha: A digital counter for your athikr.
 *   Athkar: Daily Athkar for Morning and Night.
 
-## Who is it for?
-
-*   Intermediate developers and beginners looking for a way to structure their app in a testable and maintainable way.
-*   Advanced developers looking for quick reference.
 
 ## Opening a sample in Android Studio
-
-To open one of the samples in Android Studio, begin by checking out one of the sample branches, and then open the root directory in Android Studio. The following series of steps illustrate how to open the [usecases](tree/usecases/) sample.
 
 Clone the repository:
 
