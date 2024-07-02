@@ -1,12 +1,52 @@
-Quran Application
-Overview
-Welcome to the Quran Application repository! This project aims to provide a user-friendly and feature-rich application for reading and exploring the Quran. The application is built to make the Quran accessible to users around the world, allowing them to read, search, and study the Holy Quran conveniently.
+## Screenshots
 
-Features
-Verse Navigation: Easily navigate through the Quranic verses using a user-friendly interface.
-Translation Support: Read the Quran in multiple languages to enhance understanding.
-Search Functionality: Quickly find specific verses or topics with the powerful search feature.
-Bookmarking: Save and manage bookmarks for your favorite or frequently referenced verses.
-Audio Recitation: Listen to high-quality recitations by various renowned Qaris.
-Night Mode: A comfortable reading experience with a night mode for low-light conditions.
-Cross-Platform Compatibility: The application is designed to work seamlessly on different platforms, including desktop and mobile devices.
+<img src="screenshots/screenshots.png" alt="Screenshot">
+
+## Islami Application?
+
+Welcome to the Islami Kotlin Application! This application is designed to provide a comprehensive and user-friendly experience for accessing various Islamic resources including the Quran, Hadith, Sebha, and Athkar.
+
+
+## Features
+*   Quran: Access the complete text of the Quran .
+*   Hadith: Browse and search through collections of Hadith.
+*   Sebha: A digital counter for your athikr.
+*   Athkar: Daily Athkar for Morning and Night.
+
+## Who is it for?
+
+*   Intermediate developers and beginners looking for a way to structure their app in a testable and maintainable way.
+*   Advanced developers looking for quick reference.
+
+## Opening a sample in Android Studio
+
+To open one of the samples in Android Studio, begin by checking out one of the sample branches, and then open the root directory in Android Studio. The following series of steps illustrate how to open the [usecases](tree/usecases/) sample.
+
+Clone the repository:
+
+```
+git clone git@github.com:android/architecture-samples.git
+```
+This step checks out the master branch. If you want to change to a different sample: 
+
+```
+git checkout usecases
+```
+
+**Note:** To review a different sample, replace `usecases` with the name of sample you want to check out.
+
+Finally open the `architecture-samples/` directory in Android Studio.
+
+### License
+
+
+```
+Copyright 2023 Inc.
+
+Licensed to the Apache Software Foundation (ASF) under one or more contributor
+license agreements. See the NOTICE file distributed with this work for
+additional information regarding copyright ownership. The ASF licenses this
+file to you under the Apache License, Version 2.0 (the "License"); you may not
+use this file except in compliance with the License.
+
+```
