@@ -19,17 +19,9 @@ Welcome to the Islami Kotlin Application! This application is designed to provid
 Clone the repository:
 
 ```
-git clone git@github.com:android/architecture-samples.git
-```
-This step checks out the master branch. If you want to change to a different sample: 
-
-```
-git checkout usecases
+https://github.com/ahmedNaser7/Muslim.git
 ```
 
-**Note:** To review a different sample, replace `usecases` with the name of sample you want to check out.
-
-Finally open the `architecture-samples/` directory in Android Studio.
 
 ### License
 
